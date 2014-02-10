@@ -1,0 +1,123 @@
+    div {
+        transform-style: preserve-3d;
+        user-select: none;
+        -moz-transform-style: preserve-3d;
+        -moz-user-select: none;
+        -webkit-transform-style: preserve-3d;
+        -webkit-user-select: none;
+    }
+
+   .mainPanel {
+        transform-style: preserve-3d;
+        user-select: none;
+        -moz-transform-style: preserve-3d;
+        -moz-user-select: none;
+        -webkit-transform-style: preserve-3d;
+        -webkit-user-select: none;
+          position: absolute;
+          width: 500px;
+          height: 500px;
+          -webkit-perspective: 2000px;
+          -moz-perspective: 2000px;
+          transition: all 1s;
+          -moz-transition: all 1s;
+          -webkit-transition: all 1s;    
+    }
+    
+    .front {
+        backface-visibility: hidden;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background: linear-gradient(0deg, aqua, white);
+        color: black;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 100%;
+//        box-shadow: 1px 1px rgba(20, 20, 20, 0.1);
+        transition: all 1s;
+        transform: rotateX(0deg) translateZ(1px);
+        -webkit-transition: all 1s;
+        -webkit-transform: rotateX(0deg) translateZ(1px);
+        -moz-transition: all 1s;
+        -moz-transform: rotateX(0deg) translateZ(1px);
+    }
+    
+    .ball {
+        position: absolute;
+        top:150px;
+        left:150px;
+        width: 25px;
+        height: 25px;
+        //background: linear-gradient(0deg, aqua, white);
+        color: black;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 20%;
+//        box-shadow: 1px 1px rgba(20, 20, 20, 0.1);
+        transition: all 1s;
+        transform: translateZ(100px);
+        -webkit-transition: all 0.4s;
+        -webkit-transform: translateZ(100px);
+        -moz-transition: all 0.4s;
+        -moz-transform: translateZ(100px);
+
+    }
+  
+    .outBox {
+        position: absolute;
+        top:30px;
+        left:300px;
+        width: 25px;
+        height: 25px;
+        color: black;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 20%;
+ //       box-shadow: 1px 1px rgba(20, 20, 20, 0.1);
+        transition: all 1s;
+        transform: translateZ(0px);
+        -moz-transition: all 0.8s;
+        -moz-transform: translateZ(0px);
+        -webkit-transition: all 0.8s;
+        -webkit-transform: translateZ(0px);
+    }  
+        
+    .bingoButton{
+        border: solid 1px white;
+        position: absolute;
+        top:135px;
+        left:110px;
+        width: 80px;
+        height:30px;
+        transition: all 0.4s;
+        background: linear-gradient(0deg, white, pink);
+        color: #901c1c;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 15% 15% 15% 15%;
+        box-shadow: 2px 2px rgba(20, 20, 20, 0.1);
+        transform: translateZ(300px);
+        -moz-transform: translateZ(300px);
+        -webkit-transform: translateZ(300px);
+    }
+    
+    .bingoButtonActive{
+        border: solid 1px white;
+        position: absolute;
+        top:135px;
+        left:110px;
+        width: 90px;
+        height: 30px;
+        transition: all 0.1s;
+        background: linear-gradient(0deg,white,white);
+        color: #a92a2a;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 15% 15% 15% 15%;
+        box-shadow: 2px 2px rgba(20, 20, 20, 0.1);
+        transform: rotateY(12deg) rotateZ(20deg) translateY(-15px) translateZ(400px);
+        -moz-transform: rotateY(12deg) rotateZ(20deg) translateY(-15px) translateZ(400px);
+        -webkit-transform: rotateY(12deg) rotateZ(20deg) translateY(-15px) translateZ(400px);
+    }
+
